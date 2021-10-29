@@ -712,6 +712,12 @@ input, select, textarea {
 			display: none;
 		}
 
+
+
+
+
+
+
 /* Image */
 
 	.image {
@@ -765,6 +771,25 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
+
+
+
+
+/* Video */
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 /* List */
 
@@ -889,72 +914,191 @@ input, select, textarea {
 
 		}
 
-		ul.actions.animated.spinY li {
+		ul.actions.animated.special li {
 			-moz-perspective: 1000px;
 			-webkit-perspective: 1000px;
 			-ms-perspective: 1000px;
 			perspective: 1000px;
 		}
 
-			ul.actions.animated.spinY li a {
+			ul.actions.animated.special li a {
 				-moz-transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, -moz-transform 0.5s ease-in;
 				-webkit-transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, -webkit-transform 0.5s ease-in;
 				-ms-transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, -ms-transform 0.5s ease-in;
 				transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, transform 0.5s ease-in;
 			}
 
-				ul.actions.animated.spinY li a.active {
-					-moz-transform: rotateY(480deg);
-					-webkit-transform: rotateY(480deg);
-					-ms-transform: rotateY(480deg);
-					transform: rotateY(480deg);
+				ul.actions.animated.special li a.active {
+					-moz-transform: scaleY(480deg);
+					-webkit-transform: scaleY(480deg);
+					-ms-transform: scaleY(480deg);
+					transform: scaleY(480deg);
 				}
 
-		ul.actions.animated.spinX li {
+		ul.actions.animated.special li {
 			-moz-perspective: 1000px;
 			-webkit-perspective: 1000px;
 			-ms-perspective: 1000px;
 			perspective: 1000px;
 		}
 
-			ul.actions.animated.spinX li a {
+			ul.actions.animated.special li a {
 				-moz-transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, -moz-transform 0.5s ease-in;
 				-webkit-transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, -webkit-transform 0.5s ease-in;
 				-ms-transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, -ms-transform 0.5s ease-in;
 				transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, transform 0.5s ease-in;
 			}
 
-				ul.actions.animated.spinX li a.active {
-					-moz-transform: rotateX(480deg);
-					-webkit-transform: rotateX(480deg);
-					-ms-transform: rotateX(480deg);
-					transform: rotateX(480deg);
+				ul.actions.animated.special li a.active {
+					
 				}
 
-/* Icons */
+/* Icon */
 
-	ul.icons {
-		cursor: default;
-		list-style: none;
-		padding-left: 0;
+	.icon {
+		text-decoration: none;
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		border-bottom: none;
+		position: relative;
 	}
 
-		ul.icons li {
+		.icon:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
 			display: inline-block;
-			padding-left: 0;
+			font-style: normal;
+			font-variant: normal;
+			text-rendering: auto;
+			line-height: 1;
+			text-transform: none !important;
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 400;
 		}
 
-			ul.icons li .icon {
+		.icon > .label {
+			display: none;
+		}
+
+		.icon:before {
+			line-height: solid;
+		}
+
+		.icon.solid:before {
+			font-weight: 900;
+		}
+
+		.icon.brands:before {
+			font-family: 'Font Awesome 5 Brands';
+		}
+
+		.icon.major {
+			border: solid 1px;
+			display: inline-block;
+			border-radius: 100%;
+			padding: 0.65em;
+			margin: 0 0 2em 0;
+			cursor: default;
+		}
+
+			.icon.major:before {
 				display: inline-block;
-				width: 2.5em;
-				height: 2.5em;
-				line-height: 2.5em;
+				font-size: 7.25rem;
+				width: 2.25em;
+				height: 2.25em;
+				line-height: 2.2em;
+				border-radius: 100%;
+				border: solid 1px;
 				text-align: center;
 			}
 
-				ul.icons li .icon:before {
-					font-size: 1.25rem;
+		.icon.alt {
+			display: inline-block;
+			border: solid 1px;
+			border-radius: 100%;
+		}
+
+			.icon.alt:before {
+				display: block;
+				font-size: 1.25em;
+				width: 2em;
+				height: 2em;
+				text-align: center;
+				line-height: 2em;
+			}
+
+		.icon.style1 {
+			color: #efa8b0;
+		}
+
+		.icon.style2 {
+			color: #c79cc8;
+		}
+
+		.icon.style3 {
+			color: #a89cc8;
+		}
+
+		.icon.style4 {
+			color: #9bb2e1;
+		}
+
+		.icon.style5 {
+			color: #8cc9f0;
+		}
+
+		@media screen and (max-width: 1680px) {
+
+			.icon.major:before {
+				font-size: 5.5rem;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			.icon.major:before {
+				font-size: 4.75rem;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.icon.major {
+				margin: 0 0 1.5em 0;
+				padding: 0.35em;
+			}
+
+				.icon.major:before {
+					font-size: 3.5rem;
 				}
+
+		}
+
+	.icon.major {
+		border-color: rgba(255, 255, 255, 0.35);
+	}
+
+		.icon.major:before {
+			border-color: rgba(255, 255, 255, 0.35);
+		}
+
+	.icon.alt {
+		border-color: rgba(255, 255, 255, 0.35);
+		color: #ffffff;
+	}
+
+		.icon.alt:hover {
+			background-color: rgba(255, 255, 255, 0.075);
+		}
+
+		.icon.alt:active {
+			background-color: rgba(255, 255, 255, 0.2);
+		}
+
 
 /* Table */
 
@@ -1203,7 +1347,7 @@ input, select, textarea {
 		button.primary,
 		.button.primary {
 			box-shadow: none;
-			background-color: #;
+			background-color: #e3d4bf;
 			color: #f4f4f4 !important;
 		}
 
@@ -1218,9 +1362,9 @@ input, select, textarea {
 			input[type="submit"].primary:active,
 			input[type="reset"].primary:active,
 			input[type="button"].primary:active,
-			button.primary:active,
-			.button.primary:active {
-				background-color: #2db68f;
+			button.primary:hover,
+			.button.primary:hover {
+				background-color: #f4f4f4;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
