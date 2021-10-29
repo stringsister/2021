@@ -1,7 +1,7 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway|Montserrat:700");
 @font-face {
-  font-family: 'Product Sans';
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
@@ -15,7 +15,7 @@ body {
 	justify-content: center;
 	height: 100vh;
 	align-items: center;
-	font-family: Product Sans;
+	font-family: Roboto;
 	font-size: 6vw;
 	padding: 20px;
 }
@@ -152,7 +152,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #444;
-		 font-family: 'Product Sans';
+		 font-family: 'Roboto';
 		font-size: 10pt;
 		font-weight: 300;
 		line-height: 1.75;
@@ -162,7 +162,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
-				font-size: 11pt;
+				font-size: 10pt;
 			}
 
 		}
@@ -203,14 +203,21 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
+
+
+
+
+
+
+
 	h1, h2, h3, h4, h5, h6 {
 		color: #555;
-		font-family: 'Product Sans';
+		font-family: 'Montez';
 		font-weight: 700;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
-		text-transform: uppercase;
-		letter-spacing: 0.25em;
+		text-transform: ;
+		letter-spacing: 0.1em;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -219,11 +226,11 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-size: 2em;
+		font-size: 3em;
 	}
 
 	h2 {
-		font-size: 1.75em;
+		font-size: 2.5em;
 	}
 
 	h3 {
@@ -245,11 +252,11 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		h1 {
-			font-size: 1.5em;
+			font-size: 3em;
 		}
 
 		h2 {
-			font-size: 1.25em;
+			font-size: 2.5em;
 		}
 
 	}
@@ -277,7 +284,7 @@ input, select, textarea {
 		background: rgba(144, 144, 144, 0.075);
 		border-radius: 8px;
 		border: solid 1px #cccccc;
-		font-family: 'Product Sans';
+		font-family: 'Roboto';
 		font-size: 0.9em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
@@ -285,8 +292,8 @@ input, select, textarea {
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: 'Product Sans';
-		font-size: 0.9em;
+		font-family: 'Roboto';
+		font-size: 0.8em;
 		margin: 0 0 2em 0;
 	}
 
@@ -320,6 +327,7 @@ input, select, textarea {
 	}
 
 /* Section/Article */
+/* Paragraph Text */
 
 	section.special, article.special {
 		text-align: center;
@@ -337,9 +345,9 @@ input, select, textarea {
 				content: '';
 				display: block;
 				background-color: #cccccc;
-				height: 1px;
+				height: 0px;
 				margin: 1.5rem 0 1.75rem 0;
-				width: 5rem;
+				width: 10rem;
 			}
 
 				.special header > :first-child:after {
@@ -348,8 +356,9 @@ input, select, textarea {
 				}
 
 		header p {
-			font-size: 0.9em;
-			letter-spacing: 0.25em;
+			font-size: 1em;
+			font-weight: 650;
+			letter-spacing: 0.15em;
 			margin-bottom: 0;
 			text-transform: uppercase;
 		}
@@ -365,7 +374,7 @@ input, select, textarea {
 				}
 
 				header p {
-					font-size: 0.8em;
+					font-size: 1em;
 				}
 
 					header p br {
@@ -580,7 +589,7 @@ input, select, textarea {
 				text-rendering: auto;
 				line-height: 1;
 				text-transform: none !important;
-				font-family: 'Product Sans';
+				font-family: 'Roboto';
 				font-weight: 900;
 			}
 
@@ -687,7 +696,7 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'Product Sans';
+			font-family: 'Roboto';
 			font-weight: 400;
 		}
 
@@ -1032,21 +1041,21 @@ input, select, textarea {
 		transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
 		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 		background-color: transparent;
-		border-radius: 8px;
+		border-radius: 6px;
 		border: 0;
 		box-shadow: inset 0 0 0 0px #cccccc;
 		color: #555 !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.9em;
-		font-weight: 600;
-		height: 3.5em;
-		letter-spacing: 0.25em;
-		line-height: 3.5em;
-		padding: 0 2em;
+		font-weight: 550;
+		height: 3.0em;
+		letter-spacing: 0.13em;
+		line-height: 3em;
+		padding: 0 1em;
 		position: relative;
 		text-align: center;
-		text-decoration: none;
+		text-decoration: inherit;
 		text-transform: uppercase;
 		white-space: nowrap;
 	}
