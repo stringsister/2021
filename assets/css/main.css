@@ -1,11 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway|Montserrat:700");
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
-}
+
 
 
 
@@ -15,7 +10,7 @@ body {
 	justify-content: center;
 	height: 100vh;
 	align-items: center;
-	font-family: Roboto;
+	font-family: Open Sans;
 	font-size: 6vw;
 	padding: 20px;
 }
@@ -152,8 +147,8 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #444;
-		 font-family: 'Roboto';
-		font-size: 10pt;
+		 font-family: 'Open Sans';
+		font-size: 9pt;
 		font-weight: 300;
 		line-height: 1.75;
 		letter-spacing: 0.05em;
@@ -212,7 +207,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #555;
-		font-family: 'Montez';
+		font-family: 'Courier';
 		font-weight: 700;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
@@ -226,7 +221,7 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-size: 3em;
+		font-size: 4em;
 	}
 
 	h2 {
@@ -284,7 +279,7 @@ input, select, textarea {
 		background: rgba(144, 144, 144, 0.075);
 		border-radius: 8px;
 		border: solid 1px #cccccc;
-		font-family: 'Roboto';
+		font-family: 'Open Sans';
 		font-size: 0.9em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
@@ -292,7 +287,7 @@ input, select, textarea {
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: 'Roboto';
+		font-family: 'Open Sans';
 		font-size: 0.8em;
 		margin: 0 0 2em 0;
 	}
@@ -589,7 +584,7 @@ input, select, textarea {
 				text-rendering: auto;
 				line-height: 1;
 				text-transform: none !important;
-				font-family: 'Roboto';
+				font-family: 'Open Sans';
 				font-weight: 900;
 			}
 
@@ -696,7 +691,7 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'Roboto';
+			font-family: 'Open Sans';
 			font-weight: 400;
 		}
 
