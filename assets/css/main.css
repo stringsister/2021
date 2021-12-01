@@ -208,7 +208,7 @@ input, select, textarea {
 	h1, h2, h3, h4, h5, h6 {
 		color: #000000;
 	font-family: 'Allura', cursive;
-		font-weight: 400;
+		font-weight: 545;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
 		text-transform: ;
@@ -247,7 +247,7 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		h1 {
-			font-size: 3em;
+			font-size: 4.2em;
 		}
 
 		h2 {
